@@ -8,6 +8,13 @@ let status = document.querySelector('.Status');
 // Opções disponíveis para o jogo
 const options = ["pedra", "papel", "tesoura"];
 
+//Enum das Opções
+const GAME_OPTIONS ={
+    ROCK: 'pedra',
+    PAPER:'papel',
+    SCISSORS:'tesoura'
+}
+
 // Variáveis para armazenar as escolhas do usuário e da máquina, bem como o resultado da rodada
 let useroption;
 let maquinaoption;
@@ -42,9 +49,9 @@ let determineWinner = (eu, maquina) => {
     if (eu == maquina) {
         result = "Empate!";
     } else if (
-        (eu == "pedra" && maquina == "tesoura") ||
-        (eu == "papel" && maquina == "pedra") ||
-        (eu == "tesoura" && maquina == "papel")
+        (eu == GAME_OPTIONS.ROCK && maquina == GAME_OPTIONS.SCISSORS) ||
+        (eu == GAME_OPTIONS.PAPER && maquina == GAME_OPTIONS.ROCK) ||
+        (eu == GAME_OPTIONS.SCISSORS && maquina == GAME_OPTIONS.PAPER)
     ) {
         result = "Eu";
     } else {
