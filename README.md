@@ -1,6 +1,6 @@
 # 🧱 Jogo Pedra, Papel e Tesoura (Jokenpo)
 
-![Jokenpo](screenshots/print.png)
+![Jokenpo](ScreenShots/print.png)
 
 O Jokenpo é um jogo simples e divertido que envolve três opções: pedra, papel e tesoura. Este projeto é uma implementação digital desse jogo clássico, onde você pode jogar contra a máquina e testar sua sorte e estratégia.
 
